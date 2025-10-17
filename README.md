@@ -48,9 +48,9 @@ LEAFLOW_PASSWORD    your_password
 2. 在仓库 Settings > Secrets and variables > Actions 中添加以下 secrets：
    - `LEAFLOW_ACCOUNTS`: 账号信息(账号密码之间英文冒号分隔,多账号之间英文逗号分隔)
 
-Telegram 通知配置
-   - `TELEGRAM_BOT_TOKEN`（可选）: Telegram Bot Token
-   - `TELEGRAM_CHAT_ID`（可选）: Telegram Chat ID
+Telegram 通知配置（可选，不需要tg通知可不填）
+   - `TELEGRAM_BOT_TOKEN`   Telegram Bot Token，https://t.me/BotFather 创建机器人
+   - `TELEGRAM_CHAT_ID`     Telegram Chat ID，https://t.me/laowang_serv00_bot 发送 /start 获取
 
 3. 启用 Actions 启用工作流
 
@@ -81,6 +81,8 @@ GPL 3.0
 * 禁止新建项目将代码复制到自己仓库中用做商业行为，违者必究
 * 用于商业行为的任何分支必须完整保留本项目说明，违者必究
 * 请遵守当地法律法规,禁止滥用做公共代理行为
+
+
 
 
 
