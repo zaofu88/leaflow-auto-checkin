@@ -21,6 +21,10 @@ Leaflow 多账号自动签到脚本，支持 Telegram 通知和 GitHub Actions �
 
 ## 使用方法
 
+### 注册Leaflow账号：https://leaflow.net/login
+
+### 首次请在控制台签到页面授权，否则签到失败
+
 #### 配置账号信息
 
 脚本支持两种种方式配置账号信息：
@@ -33,9 +37,8 @@ LEAFLOW_PASSWORD    your_password
 
 ##### 方式二：多个账号（分隔符方式，向后兼容）
 ```bash
-LEAFLOW_ACCOUNTS
-
-email1@example.com:password1,email2@example.com:password2
+变量名：LEAFLOW_ACCOUNTS
+变量值：邮箱1:密码1,邮箱2:密码2,邮箱3:密码3
 ```
 
 
@@ -65,7 +68,7 @@ Telegram 通知配置
 
 
 ## 注意事项
-
+- 请确保在签到页面已授权
 - 请确保账号信息正确无误,并正确配置secrets
 - 脚本会在账号间间隔 10 秒钟，避免请求过于频繁
 - 在 GitHub Actions 中运行时，脚本会自动使用无头模式（headless mode）
@@ -78,6 +81,8 @@ GPL 3.0
 * 禁止新建项目将代码复制到自己仓库中用做商业行为，违者必究
 * 用于商业行为的任何分支必须完整保留本项目说明，违者必究
 * 请遵守当地法律法规,禁止滥用做公共代理行为
+
+
 
 
 
